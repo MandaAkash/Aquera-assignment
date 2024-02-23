@@ -1,0 +1,57 @@
+.resident-list{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5fbc4a62c2150e62cfcb09aa%2F1626826379382-G3AZ2M1WYL72AJEV3LZR%2Fsw%2B%25281%2529.jpg&tbnid=70USgtCuxJDo-M&vet=12ahUKEwjiituwncGEAxWDa2wGHZdMDcMQMygEegQIARBd..i&imgrefurl=https%3A%2F%2Fwww.cultureslate.com%2Fnews%2Fthe-5-most-influential-people-behind-star-wars-that-you-dont-know-of&docid=3kJP64BoK3w7vM&w=1280&h=720&q=residents%20in%20star%20wars&ved=2ahUKEwjiituwncGEAxWDa2wGHZdMDcMQMygEegQIARBd");
+}
+.resident-card{
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.8s;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    padding:20px;
+    min-height: 300px;
+    min-width: 100px;
+    overflow: hidden;
+}
+.resident-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+}
+.resident-list{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-auto-rows: -20px 900px;
+    grid-template-columns: repeat(3,320px);
+    grid-gap: 50px;
+    cursor: pointer;
+    /* Mobile */
+@media only screen and (max-width: 767px) {
+    grid-template-columns: repeat(1, 50%);
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 50%);
+      grid-gap: 0;
+    }
+    /* Tablets */
+    @media only screen and (min-width: 767px) and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 30%);
+      grid-gap:20px;
+    }
+    @media only screen and (min-width: 767px) {
+      margin-top: -130px;
+      padding: 10px 0px;
+    }
+  }
+  /* Tablets */
+  @media only screen and (min-width: 767px) and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 30%);
+    grid-gap:90px;
+  }
+  @media only screen and (min-width: 767px) {
+    margin-top: -40px;
+    padding: 10px 0px;
+    grid-gap:120px;
+  }
+}
